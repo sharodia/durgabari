@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Hahmlet:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+body {
+	font-family: "Hahmlet", serif;
+}
+
+.main-title {
+	font-family: "Playfair Display", serif; !important;
+	font-size: 4rem;
+}
+
+.main-img {
+	max-width: 80%;
+}
+
+.sub-heading {
+	font-family: "Playfair Display", serif; !important;
+	font-size: 3rem;
+}
+
+.content-center {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+}
+
+.navbar-item {
+	font-family: "Hahmlet", serif;
+}
+
+.navbar-burger > span {
+  height: 3px; !important;
+}
+
+.full-height {
+	min-height: 100vh; !important;
+	scroll-snap-align: start;
+}
+
+.main-container {
+	scroll-snap-type: y mandatory;
+	overflow-y: scroll;
+	height: 100vh;
+}
+
+.logo {
+	min-height: 3rem;
+}
+/*navbar-burger span:nth-child(3) {
+  bottom: calc(50% + var(--bulma-burger-gap));
+}*/
