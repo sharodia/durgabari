@@ -1,97 +1,122 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 	<head>
+		<meta charset="UTF-8" />
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    	<meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    	<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; 
+															style-src 'self' https://fonts.googleapis.com; 
+															connect-src https://script.google.com https://script.googleusercontent.com;
+															font-src https://fonts.gstatic.com https://fonts.googleapis.com;"/>
+		<meta name="referrer" content="no-referrer" />
 		<title>Maritimes Durgabari</title>
-		<link rel="stylesheet" href="styles/bengali.css">
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@creativebulma/bulma-divider@1.1.0/dist/bulma-divider.min.css">
-		<script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
-        <link rel="stylesheet" href="styles/bengali-divider.css">
-        <link rel="stylesheet" href="styles/bengali-timeline.min.css">
-		<link rel="stylesheet" href="styles/bengali-extended.css">
-        
-		<script>
-		document.addEventListener('DOMContentLoaded', () => {
-
-		  // Get all "navbar-burger" elements
-		  const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
-
-		  // Add a click event on each of them
-		  $navbarBurgers.forEach( el => {
-			el.addEventListener('click', () => {
-
-			  // Get the target from the "data-target" attribute
-			  const target = el.dataset.target;
-			  const $target = document.getElementById(target);
-
-			  // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-			  el.classList.toggle('is-active');
-			  $target.classList.toggle('is-active');
-
-			});
-		  });
-
-		});
-		</script>
+		<link rel="icon" type="image/x-icon" href="images/Durgabari_Icon.png" />
+		<link rel="stylesheet" href="styles/bengali.min.css" />		
+        <link rel="stylesheet" href="styles/bengali-timeline.min.css" />
+		<link rel="stylesheet" href="styles/bengali-divider.min.css" />
+		<link rel="stylesheet" href="styles/bengali-extended.css" />
 	</head>
-	<body class="has-navbar-fixed-bottom main-container">
-		<div class="section full-height" id="home">
+	<body>
+		<nav id="home" class="navbar" role="navigation" aria-label="main navigation">
+			<div class="navbar-brand">
+				<a class="navbar-item" href="https://maritimesdurgabari.ca">
+					<figure class="image">
+						<img class="logo" src="images/durgabari_logo.png" />
+					</figure>
+				</a>
+				<div class="navbar-burger" data-target="sitenav" aria-label="menu" aria-expanded="false">
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</div>
+			<div id="sitenav" class="navbar-menu">				
+				<div class="navbar-start is-flex-grow-1 is-justify-content-center is-justify-content-space-evenly has-text-weight-semibold">
+					<a class="navbar-item" href="#mission">Our Mission</a>
+					<a class="navbar-item" href="#progress">Plan and Progress</a>
+					<a class="navbar-item" href="#faq">FAQ</a>
+					<a class="navbar-item" href="#contact">Contact</a>
+				</div>
+			</div>
+		</nav>
+		<div class="section pt-0 pb-0" id="home">
 			<div class="columns">
 				<div class="column is-hidden-touch">
-					<figure class="image content-center">
-						<img class="main-img" src="images/durga_temple.png" />
+					<figure class="image">
+						<img class="main-img" src="images/durga_temple.jpg" />
 					</figure>
 				</div>
-				<div class="column">
-					<div class="content has-text-centered mb-3 is-italic">
+				<div class="column block">
+					<div class="content has-text-centered mb-0 pb-0 is-italic">
 						<p>While God transcends all boundaries, there is undeniable essence in the need for a Spiritual Sanctuary</p>
 					</div>
-					<div class="box has-text-centered is-shadowless is-size-4">
+					<div class="box has-text-centered is-shadowless is-size-4 pb-1">
 						<p>Join us in shaping a vibrant legacy of</p>
 						<p class="main-title has-text-link has-text-weight-semibold">Maritimes Durgabari</p>
 						<p>in Atlantic Canada, where the spirit finds its home and diversity thrives.</p>
 					</div>
 					<div class="box is-shadowless is-hidden-desktop">
 						<figure class="image content-center">
-							<img class="main-img" src="images/durga_temple.png" />
+							<img class="main-img" src="images/durga_temple.jpg" />
 						</figure>
 					</div>
-					<div class="box is-shadowless">
-						<progress class="progress is-success" value="10" max="100">
-						  10%
-						</progress>
-						<nav class="level">
-						  <div class="level-item has-text-centered">
-							<div>
-							  <p class="heading">Pledged</p>
-							  <p class="title">1,234</p>
+					<div class="columns is-vcentered">
+						<div class="column is-two-thirds">
+							<div class="tags has-addons">
+							  <span class="tag has-text-weight-semibold">Pledge Type</span>
+							  <span class="tag is-primary has-text-weight-semibold">One-Time</span>
 							</div>
-						  </div>
-						  <div class="level-item has-text-centered">
-							<div>
-							  <p class="heading">Target</p>
-							  <p class="title">9,99,999</p>
+							<progress class="progress is-success" value="10" max="100">
+							  10%
+							</progress>
+							<nav class="level">
+							  <div class="level-item has-text-centered">
+								<div>
+								  <p class="heading">Pledged</p>
+								  <p class="title is-size-5">C$ 1,234</p>
+								</div>
+							  </div>
+							  <div class="level-item has-text-centered">
+								<div>
+								  <p class="heading">Target</p>
+								  <p class="title is-size-5">C$ 9,99,999</p>
+								</div>
+							  </div>
+							</nav>
+						</div>
+						<div class="column">
+							<div class="tags has-addons">
+							  <span class="tag has-text-weight-semibold">Pledge Type</span>
+							  <span class="tag is-primary has-text-weight-semibold">Recurring</span>
 							</div>
-						  </div>
-						</nav>
+							<div class="message is-primary has-text-centered">
+								<div class="message-body">
+									Monthly C$ 1,111 Pledged
+								</div>
+							</div>
+						</div>
 					</div>
-					<div class="box is-shadowless">
+					<div class="box is-shadowless pl-0 pr-0">
 						<div class="columns">
 							<div class="column">
-								<a class="button is-medium is-fullwidth is-primary">Donate</a>
+								<a class="button is-medium is-fullwidth is-primary modal-open" data-target="donate-modal">Donate</a>
 							</div>
 							<div class="column">
-								<a class="button is-medium is-fullwidth is-primary">Pledge</a>
+								<a class="button is-medium is-fullwidth is-primary modal-open" data-target="pledge-modal">Pledge</a>
 							</div>
 						</div>
 				</div>
 				</div>
 			</div>
 		</div>
-		<div class="section full-height is-flex is-align-items-center" id="mission">
+		<div class="box is-shadowless divider is-primary pt-2 pb-2" id="mission"><img class="main-img" src="images/divider.svg" /></div>
+		<div class="section is-flex is-align-items-center pt-0 pb-0">
 			<div class="columns is-flex-grow-1 is-vcentered">
 				<div class="column has-text-centered is-hidden-desktop">
 					<p class="sub-heading has-text-weight-semibold">Our Mission</p>
 				</div>
-				<div class="column content is-size-5 notification pb-5">
+				<div class="column content is-size-5 notification mb-0">
 					<ul>
 						<li>Establish a permanent sacred space for the worship of Goddess Durga in Atlantic Canada.</li>
 						<li>As the Bengali Community, celebrate our rich cultural heritage through religious ceremonies and cultural activities.</li>
@@ -105,7 +130,8 @@
 				</div>
 			</div>
 		</div>
-		<div class="section full-height is-flex is-align-items-center" id="progress">
+		<div class="box is-shadowless divider is-primary pt-2 pb-2" id="progress"><img class="main-img" src="images/divider.svg" /></div>
+		<div class="section is-flex is-align-items-center pt-0 pb-0">
 			<div class="columns is-flex-grow-1 is-vcentered">
 				<div class="column has-text-centered">
 					<p class="sub-heading has-text-weight-semibold">Plan and Progress</p>
@@ -145,7 +171,8 @@
 				</div>				
 			</div>
 		</div>
-		<div class="section full-height" id="faq">
+		<div class="box is-shadowless divider is-primary pt-2 pb-2" id="faq"><img class="main-img" src="images/divider.svg" /></div>
+		<div class="section pt-0 pb-0" >
 			<div class="box is-shadowless has-text-centered sub-heading has-text-weight-semibold pt-1 pb-1">Frequently Asked Questions</div>
 			<div class="box is-shadowless pt-1">
 				<p class="has-text-weight-semibold is-size-5 pb-1">Q: I am enthusiastic about Maritimes Durgabari and would like to contribute. How can I donate?</p>
@@ -168,57 +195,106 @@
 				<p class="is-italic">A: We welcome everyone to join and support Maritimes Durgabari in various capacities. Whether it's participating in Puja rituals, offering technical support, assisting with food preparation, or contributing to cultural events, there's a role for everyone. Learn more about volunteering opportunities at <span class="has-text-link"><a href="https://sharodiasociety.org/volunteering/" target="_blank" rel="noopener noreferrer">here</a></span>.</p>
 			</div>		
 		</div>
-		<div class="section full-height"  id="contact">
+		<div class="box is-shadowless divider is-primary pt-2 pb-2" id="contact"><img class="main-img" src="images/divider.svg" /></div>
+		<div class="section full-height pt-0 pb-0" >
 			<p class="has-text-centered sub-heading has-text-weight-semibold pb-5">Contact Us</p>
-			<div class="columns">
-				<div class="column is-flex is-flex-direction-column is-align-items-center">
+			<div class="box is-shadowless has-text-centered">
+				<p>We'd love to hear from you! Whether you have questions, want to get involved, or simply want to share your thoughts,
+					please don't hesitate to reach out.</p>
+			</div>			
+			<div class="columns is-multiline is-centered">
+				<div class="column is-4 is-flex is-flex-direction-column is-align-items-center">
 					<figure class="image is-128x128">
-						<img class="is-rounded" src="images/durga_temple.png"/>
+						<img class="is-rounded" src="images/BijanMajumdar.jpg"/>
 					</figure>
-					<p class="title">Bijan Majumdar</p>
-					<p>+1 902 111 1111</p>
+					<p class="title is-size-4">Bijan Majumdar</p>
+					<p>+1 902 444 9637</p>
+				</div>				
+				<div class="column is-4 is-flex is-flex-direction-column is-align-items-center">
+					<figure class="image is-128x128">
+						<img class="is-rounded" src="images/SanjuktaDatta.jpg"/>
+					</figure>
+					<p class="title is-size-4">Sanjukta Datta</p>
+					<p>+1 902 293 8405</p>
 				</div>
-				<div class="column is-flex is-flex-direction-column is-align-items-center">
+				<div class="column is-4 is-flex is-flex-direction-column is-align-items-center">
 					<figure class="image is-128x128">
-						<img class="is-rounded" src="images/durga_temple.png"/>
+						<img class="is-rounded" src="images/IndranilDutta.jpg"/>
 					</figure>
-					<p class="title">Neil</p>
-					<p>+1 902 222 2222</p>
+					<p class="title is-size-4">Indranil Dutta</p>
+					<p>+1 902 448 1730</p>
 				</div>
-				<div class="column is-flex is-flex-direction-column is-align-items-center">
+				<div class="column is-4 is-flex is-flex-direction-column is-align-items-center">
 					<figure class="image is-128x128">
-						<img class="is-rounded" src="images/durga_temple.png"/>
+						<img class="is-rounded" src="images/NeelgiriChatterjee.jpg"/>
 					</figure>
-					<p class="title">Sanjoy Choudhury</p>
-					<p>+1 902 333 3333</p>
+					<p class="title is-size-4">Neelgiri Chatterjee</p>
+					<p>+1 902 210 0469</p>
+				</div>
+				<div class="column is-4 is-flex is-flex-direction-column is-align-items-center">
+					<figure class="image is-128x128">
+						<img class="is-rounded" src="images/SanjoyChowdhury.jpg"/>
+					</figure>
+					<p class="title is-size-4">Sanjoy Chowdhury</p>
+					<p>+1 902 220 2296</p>
 				</div>
 			</div>
-							 
-						
 		</div>
-		<nav class="navbar is-fixed-bottom has-shadow" role="navigation" aria-label="main navigation">
-			<div class="navbar-brand">
-				<a class="navbar-item" href="https://maritimesdurgabari.ca">
-					<figure class="image content-center">
-						<img class="logo" src="images/durgabari_logo.png" />
-					</figure>
-				</a>
-				<div class="navbar-burger" data-target="sitenav" aria-label="menu" aria-expanded="false">
-					<span></span>
-					<span></span>
-					<span></span>
-					<span></span>
-				</div>
+		<div id="pledge-modal" class="modal">
+			<div class="modal-background"></div>
+			<div id="pledge-section" class="modal-card">
+				<header class="modal-card-head">
+					<p class="title">
+						Pledge Your Support
+					</p>
+				</header>
+				<form id="pledge-form" novalidate>
+					<section class="modal-card-body">
+						<div id="pledge-text" class="content">
+						<p class="is-size-6">Let us know your contact information, and a member of our team will reach out to you personally to discuss your pledge and provide more details on how you can contribute to this meaningful initiative.</p>
+						</div>						
+						<div class="field">
+							<label class="label">Name</label>
+							<div class="control">
+								<input class="input" type="text" name="Name" placeholder="Please enter your Name">
+							</div>
+						</div>
+						<div class="field">
+							<label class="label">Phone Number</label>
+							<div class="control">
+								<input class="input" type="text" name="Phone" placeholder="Please enter your Phone Number">
+							</div>
+						</div>
+						<div class="field">
+							<label class="label">Email</label>
+							<div class="control">
+								<input class="input" type="email" name="Email" placeholder="Please enter your Email">						
+							</div>
+						</div>					
+					</section>
+					<footer class="modal-card-foot">
+						<div class="buttons">
+							<button class="button is-primary no-close" type="submit" id="pledge-submit">Submit</button>
+							<button class="button is-primary" type="button" id="pledge-close">Cancel</button>
+						</div>
+					</footer>
+				</form>
 			</div>
-			<div id="sitenav" class="navbar-menu">				
-				<div class="navbar-start is-flex-grow-1 is-justify-content-center is-justify-content-space-evenly">
-					<a class="navbar-item" href="#home">Home</a>
-					<a class="navbar-item" href="#mission">Our Mission</a>
-					<a class="navbar-item" href="#progress">Plan and Progress</a>
-					<a class="navbar-item" href="#faq">FAQ</a>
-					<a class="navbar-item" href="#contact">Contact</a>
-				</div>
+			<button class="modal-close is-large" aria-label="close"></button>			
+		</div>
+		<div id="donate-modal" class="modal">
+			<div class="modal-background"></div>
+			<div class="modal-content">
+				<article class="message is-primary has-background-white">
+				  <div class="message-body has-text-black">
+					<p class="pb-4">We encourage you making donations through Interac eTransfer to <span class="has-text-link">sharodiasociety@gmail.com</span>. When making the eTransfer, please include the word <span class="has-text-weight-bold">"Durgabari"</span> in the description box to ensure easy recognition of your contribution.</p> 
+					<p>For other contribution methods, feel free to contact our team mentioned at the Contact section.</p>
+				  </div>
+				</article>
 			</div>
-		</nav>
+			<button class="modal-close is-large" aria-label="close"></button>
+		</div>
+		<a id="gotop" class="backtotop" href="#home"><img src="images/top-arrow.svg" alt="up arrow"></a>
+		<script src="scripts/durgabari.min.js"></script>
 	</body>
 </html>

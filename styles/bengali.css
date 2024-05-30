@@ -6993,7 +6993,7 @@ button.dropdown-item.is-selected {
   --bulma-navbar-background-color: var(--bulma-scheme-main);
   --bulma-navbar-box-shadow-size: 0 0.125em 0 0;
   --bulma-navbar-box-shadow-color: var(--bulma-background);
-  --bulma-navbar-padding-vertical: 1rem;
+  --bulma-navbar-padding-vertical: 3rem;
   --bulma-navbar-padding-horizontal: 2rem;
   --bulma-navbar-z: 30;
   --bulma-navbar-fixed-z: 30;
