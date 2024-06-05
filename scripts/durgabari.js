@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
       
     // Submit pledge data
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbymlz7lGxWKQ30wCKc7vtmwzl_Jvfclepq2yzD5i0b-RwpwPkIwRC6CmC0S6p_Lia2Hiw/exec';
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzXTw2Q4b7MAWYjD7o7kCVJwMrg9C3AoTuyhI-tQKGh1jfDd8J12ghtWz_lO4Fts5Cu/exec';
     const pledgeForm = document.querySelector('#pledge-form');
     const pledgeText = document.getElementById('pledge-text');
     const pledgeSubmit = document.getElementById('pledge-submit');
