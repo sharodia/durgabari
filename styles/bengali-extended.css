@@ -86,3 +86,9 @@ html {
 .backtotop:hover {
   background-color: #F15941;
 }
+
+.primary-outlined {
+	border-style: solid;
+    border-width: max(1px, 0.0625em);
+    border-color: #ed3137;
+}
