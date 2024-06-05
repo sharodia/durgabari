@@ -6,7 +6,7 @@ body {
 }
 
 .main-title {
-	font-family: "Playfair Display", serif; !important;
+	font-family: "Playfair Display", serif !important;
 	font-size: 4rem;
 }
 
@@ -15,7 +15,7 @@ body {
 }
 
 .sub-heading {
-	font-family: "Playfair Display", serif; !important;
+	font-family: "Playfair Display", serif !important;
 	font-size: 3rem;
 }
 
@@ -30,16 +30,19 @@ body {
 }
 
 .navbar-burger > span {
-  height: 3px; !important;
+  height: 3px !important;
 }
 
 .full-height {
-	min-height: 100vh; !important;
+	min-height: 100vh !important;
 	/* scroll-snap-align: start; */
 }
 
 .logo {
-	min-height: 8rem;
+	min-width: 12vmax;
+  min-height: 8vmax;
+  max-width: 24vmax;
+  max-height: 16vmax;
 }
 /*navbar-burger span:nth-child(3) {
   bottom: calc(50% + var(--bulma-burger-gap));
