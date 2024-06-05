@@ -3,6 +3,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // Get all "navbar-burger" elements
     const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
 
+    // Get all "navbar-item" elements
+    const $navbarItems = Array.prototype.slice.call(document.querySelectorAll('.navbar-item'), 0);
+
     // Add a click event on each of them
     $navbarBurgers.forEach( el => {
         el.addEventListener('click', () => {
@@ -17,6 +20,24 @@ document.addEventListener('DOMContentLoaded', () => {
 
         });
     });
+
+    // Close Navbar on clicking a navbar-item
+    $navbarItems.forEach( ni => {
+      ni.addEventListener('click', () => {
+
+        $navbarBurgers.forEach( nb => {
+          // Get the target from the "data-target" attribute
+          const nbtarget = nb.dataset.target;
+          const $nbtarget = document.getElementById(nbtarget);
+
+          // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+          nb.classList.remove('is-active');
+          $nbtarget.classList.remove('is-active');
+
+        });
+
+      });
+  });
       
     // Functions to open and close a modal
     function openModal($el) {
