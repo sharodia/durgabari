@@ -40,7 +40,6 @@ body {
 
 .logo {
 	min-height: 8rem;
-	max-width: 50vw;
 }
 /*navbar-burger span:nth-child(3) {
   bottom: calc(50% + var(--bulma-burger-gap));
