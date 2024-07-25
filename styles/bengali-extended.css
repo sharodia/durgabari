@@ -94,4 +94,5 @@ html {
 	border-style: solid;
     border-width: max(1px, 0.0625em);
     border-color: #ed3137;
+    margin-bottom: 0.9rem;
 }
